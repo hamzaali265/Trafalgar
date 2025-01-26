@@ -1,0 +1,64 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Mulish';
+    font-size: 24px;
+    font-weight: 700;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 16px;
+  padding-right: 5%;
+
+}
+
+li {
+    margin-right: 20px;
+    font-family: 'Mulish';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22.59px;
+    text-align: left;
+    color:#1F1534;
+    padding-right: 40px;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.logo-circle {
+    display: inline-block;
+    font-family: 'Mulish';
+    font: 26px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #458FF6;
+    color: #fff;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 8px;
+  }
