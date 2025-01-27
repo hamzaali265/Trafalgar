@@ -1,11 +1,11 @@
-import '../styles/main_section.css'
-import dots from '../assets/dots.svg'
-import illustration from '../assets/illustration.svg'
+import dots from '../assets/dots.svg';
+import illustration from '../assets/illustration.svg';
+import '../styles/main_section.css';
 
 function MainSection() {
     return (
-        <main>
-            <div className="content-container">
+        <main >
+            <div className="content-container" >
                 <img src={dots} alt="logo" />
                 <div className="content">
                     <h1>Virtual healthcare<br />for you</h1>
@@ -17,7 +17,7 @@ function MainSection() {
 
             </div>
 
-            <div className="image-container">
+            <div className="image-container"  >
                 <img src={illustration} />
             </div>
         </main>
