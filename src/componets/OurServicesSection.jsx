@@ -48,7 +48,7 @@ function OurServicesSection() {
     },
   ];
   return (
-    <div style={{ marginTop: "192px" }}>
+    <div style={{ marginTop: "192px", height: "1200px" }}>
       <h1
         style={{
           textAlign: "center",
@@ -85,59 +85,67 @@ function OurServicesSection() {
         with our highly qualified doctors you can consult with us which type of
         service is suitable for your health
       </p>
-      <div style={{ position: "relative" }}>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            zIndex: "-1",
-          }}
-        >
-          <img
-            src={bgShape}
-            height={"671.35px"}
-            width={"937px"}
-            style={{
-              opacity: "60%",
-              left: "245px",
-              top: "0.01px",
-              // position: "absolute"
-            }}
-          />
-          <img src={dots} />
-        </div>
-        <div
-          className="center"
-          style={{
-            zIndex: "1",
-            position: "absolute",
-            // backgroundColor: "red",
 
-            width: "100%",
-            transform: "translate(-50%, -50%)",
-            top: "50%",
-            left: "50%",
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          zIndex: "-1",
+        }}
+      >
+        <img
+          src={bgShape}
+          height={"671.35px"}
+          width={"937px"}
+          style={{
+            opacity: "60%",
+            left: "245px",
+            top: "0.01px",
+            // position: "absolute"
+          }}
+        />
+        <img src={dots} />
+      </div>
+
+      <div
+        className="center"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "20px",
+          marginTop: "80px",
+          width: "100%",
+          transform: "translate(5%, -70%)",
+          zIndex: "1",
+          // transform: "translate(50%, -20%)",
+        }}
+      >
+        {services.map((service, index) => (
+          <ServicesCard
+            key={index}
+            img={service.img}
+            title={service.title}
+            description={service.description}
+          />
+        ))}
+        <button
+          style={{
+            marginTop: "72px",
+            border: "1.4px solid #458FF6",
+            borderRadius: "55px",
+            padding: "12px 51px",
+            backgroundColor: "#ffff",
+
+            fontFamily: "Mulish",
+            fontSize: "18px",
+            fontWeight: "700",
+            color: "#458FF6",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              gap: "20px",
-              marginTop: "200px",
-            }}
-          >
-            {services.map((service, index) => (
-              <ServicesCard
-                key={index}
-                img={service.img}
-                title={service.title}
-                description={service.description}
-              />
-            ))}
-          </div>
-        </div>
+          Learn more
+        </button>
       </div>
     </div>
   );
