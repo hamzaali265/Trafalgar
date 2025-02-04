@@ -4,6 +4,7 @@ import HealthCareSection from "./componets/HealthCare";
 import MainSection from "./componets/main_section";
 import NavBar from "./componets/nav_bar";
 import OurServicesSection from "./componets/OurServicesSection";
+import TestimonialsSection from "./componets/TestimonialsSection";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <OurServicesSection />
       <HealthCareSection />
       <DownloadAppSection />
+      <TestimonialsSection />
     </>
   );
 }
