@@ -1,4 +1,5 @@
 import "./App.css";
+import DownloadAppSection from "./componets/DownloadAppSection";
 import HealthCareSection from "./componets/HealthCare";
 import MainSection from "./componets/main_section";
 import NavBar from "./componets/nav_bar";
@@ -10,6 +11,7 @@ function App() {
       <MainSection />
       <OurServicesSection />
       <HealthCareSection />
+      <DownloadAppSection />
     </>
   );
 }
